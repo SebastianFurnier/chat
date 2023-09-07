@@ -1,5 +1,5 @@
 public class Mensaje {
-    String mensaje;
+    private String mensaje;
     public Mensaje(String mensaje){
         this.mensaje = mensaje;
     }

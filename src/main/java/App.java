@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class App {
-    Map<String, Usuario> coleccionUsuarios;
+    private Map<String, Usuario> coleccionUsuarios;
     public App(){
         coleccionUsuarios = new HashMap<>();
     }
@@ -17,15 +17,13 @@ public class App {
         return usuarioActual;
     }
 
-    public boolean enviarMensaje(Usuario remitente, Usuario destinatario, String mensaje){
+    public void enviarMensaje(Usuario remitente, Usuario destinatario, String mensaje){
 
         Chat chatActualRemitente = remitente.obtenerChat(destinatario);
         Chat chatActualDestinatario = destinatario.obtenerChat(remitente);
 
         chatActualRemitente.guardarMensaje(mensaje);
         chatActualDestinatario.guardarMensaje(mensaje);
-
-        return true;
     }
 
     public void mostrarMensajes(Usuario remitente ,Usuario destinatario){

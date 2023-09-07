@@ -5,7 +5,7 @@ public class Main {
         Usuario usuarioDos = app.nuevoUsuario("lucas");
         app.enviarMensaje(usuarioUno, usuarioDos, "Hola lucas");
         app.enviarMensaje(usuarioDos, usuarioUno, "Hola como estas?");
-        app.enviarMensaje(usuarioUno, usuarioDos, "Muy bien vos?");
+        app.enviarMensaje(usuarioUno, usuarioDos, "Muy bien, vos?");
         app.enviarMensaje(usuarioDos, usuarioUno, "todo tranqui");
 
         app.mostrarMensajes(usuarioUno, usuarioDos);

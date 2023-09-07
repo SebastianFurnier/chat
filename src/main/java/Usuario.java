@@ -2,8 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Usuario {
-    Map<Usuario, Chat> coleccionChat;
-    String nombre;
+    private Map<Usuario, Chat> coleccionChat;
+    private String nombre;
     public Usuario(String nombre){
         coleccionChat = new HashMap<>();
         this.nombre = nombre;
