@@ -13,5 +13,5 @@ La clase Chat contiene una Lista de Mensajes, para que queden ordenados de maner
 ---
 
 <div>
-<img width="70%" src="media/secuencia.png" alt="Diagrama de secuencia.">
+<img width="70%" src="media/chat.png" alt="Diagrama de secuencia.">
 </div>
